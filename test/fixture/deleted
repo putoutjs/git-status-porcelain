@@ -1,0 +1,8 @@
+ D lib/entry.json
+ D lib/header.json
+ D lib/parse-entries.js
+ D lib/parse-entry.js
+ D lib/parse-git-index.js
+ D lib/parse-header.js
+ M package.json
+?? lib/parse.js

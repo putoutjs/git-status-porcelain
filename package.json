@@ -1,0 +1,60 @@
+{
+  "name": "@putout/git-status-porcelain",
+  "version": "1.0.0",
+  "description": "parse git status --porclain output with a pleasure",
+  "main": "lib/porcelain.js",
+  "scripts": {
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint",
+    "report": "madrun report",
+    "watcher": "madrun watcher",
+    "watch:test": "madrun watch:test",
+    "watch:lint": "madrun watch:lint",
+    "watch:tape": "madrun watch:tape",
+    "watch:coverage:base": "madrun watch:coverage:base",
+    "watch:coverage:tape": "madrun watch:coverage:tape",
+    "watch:coverage": "madrun watch:coverage"
+  },
+  "nyc": {
+    "include": [
+      "lib"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/parse-git-index.git"
+  },
+  "keywords": [
+    "read",
+    "uint",
+    "buffer"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/parse-git-index/issues"
+  },
+  "homepage": "https://github.com/coderaiser/parse-git-index",
+  "devDependencies": {
+    "@cloudcmd/stub": "^2.3.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^6.4.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.5",
+    "mock-require": "^3.0.3",
+    "nodemon": "^1.11.0",
+    "nyc": "^14.1.0",
+    "putout": "^6.1.0",
+    "supertape": "^1.2.3"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}
