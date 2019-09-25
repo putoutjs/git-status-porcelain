@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/parse-git-index.git"
+    "url": "git://github.com/coderaiser/git-status-porcelain.git"
   },
   "keywords": [
     "read",
@@ -34,9 +34,9 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coderaiser/parse-git-index/issues"
+    "url": "https://github.com/coderaiser/git-status-porcelain/issues"
   },
-  "homepage": "https://github.com/coderaiser/parse-git-index",
+  "homepage": "https://github.com/coderaiser/git-status-porcelain",
   "devDependencies": {
     "@cloudcmd/stub": "^2.3.2",
     "coveralls": "^3.0.0",
