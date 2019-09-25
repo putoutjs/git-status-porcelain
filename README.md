@@ -57,15 +57,15 @@ getNames(modifiedFiles);
 
 MIT
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/porcelain.svg?style=flat&longCache=true
-[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/porcelain/master.svg?style=flat&longCache=true
-[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/porcelain.svg?style=flat&longCache=true
+[NPMIMGURL]:                https://img.shields.io/npm/v/@putout/git-status-porcelain.svg?style=flat&longCache=true
+[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/git-status-porcelain/master.svg?style=flat&longCache=true
+[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/git-status-porcelain.svg?style=flat&longCache=true
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat&longCache=true
-[NPMURL]:                   https://npmjs.org/package/porcelain 'npm'
-[BuildStatusURL]:           https://travis-ci.org/coderaiser/porcelain  'Build Status'
-[DependencyStatusURL]:      https://david-dm.org/coderaiser/porcelain 'Dependency Status'
+[NPMURL]:                   https://npmjs.org/package/@putout/git-status-porcelain 'npm'
+[BuildStatusURL]:           https://travis-ci.org/coderaiser/git-status-porcelain  'Build Status'
+[DependencyStatusURL]:      https://david-dm.org/coderaiser/git-status-porcelain 'Dependency Status'
 [LicenseURL]:               https://tldrlegal.com/license/mit-license 'MIT License'
 
-[CoverageURL]:              https://coveralls.io/github/coderaiser/porcelain?branch=master
-[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/porcelain/badge.svg?branch=master&service=github
+[CoverageURL]:              https://coveralls.io/github/coderaiser/git-status-porcelain?branch=master
+[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/git-status-porcelain/badge.svg?branch=master&service=github
 
