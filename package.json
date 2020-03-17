@@ -43,7 +43,7 @@
     "eslint": "^6.4.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-putout": "^3.3.1",
-    "madrun": "^3.0.5",
+    "madrun": "^5.4.5",
     "mock-require": "^3.0.3",
     "nodemon": "^1.11.0",
     "nyc": "^14.1.0",
