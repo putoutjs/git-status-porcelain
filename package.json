@@ -1,6 +1,6 @@
 {
   "name": "@putout/git-status-porcelain",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "parse git status --porclain output with a pleasure",
   "main": "lib/porcelain.js",
   "scripts": {

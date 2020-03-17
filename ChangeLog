@@ -1,3 +1,15 @@
+2020.03.18, v1.1.0
+
+feature:
+- (git-status-porcelain) add support of renamed
+- (package) nodemon v2.0.2
+- (package) nyc v15.0.0
+- (package) eslint-plugin-node v11.0.0
+- (package) madrun v5.4.5
+- (package) eslint-plugin-putout v3.3.1
+- (package) putout v7.18.2
+
+
 2019.09.25, v1.0.1
 
 fix:
