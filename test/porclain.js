@@ -9,6 +9,7 @@ const stub = require('@cloudcmd/stub');
 
 const deleted = readFileSync(join(__dirname, 'fixture', 'deleted'), 'utf8');
 const untracked = readFileSync(join(__dirname, 'fixture', 'untracked'), 'utf8');
+const renamed = readFileSync(join(__dirname, 'fixture', 'renamed'), 'utf8');
 
 const test = require('supertape');
 const porclain = require('..');
@@ -41,6 +42,19 @@ test('porclain: added', (t) => {
     });
     
     const expected = [];
+    
+    t.deepEqual(result, expected);
+    t.end();
+});
+
+test('porclain: renamed', (t) => {
+    const result = porclain(renamed, {
+        renamed: true,
+    });
+    
+    const expected = [
+        'packages/putout/2.js',
+    ];
     
     t.deepEqual(result, expected);
     t.end();
