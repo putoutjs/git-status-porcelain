@@ -33,14 +33,13 @@ const {run, parse, pick, getNames} = porcelain;
 const stdout = run();
 // returns
 ' M README.md\n?? 1.js\n'
->
 
 const files = parse(stdout);
 // returns
 [ { name: 'README.md', mode: ' M ' }, { name: '1.js', mode: '?' } ]
 
 const modifiedFiles = pick(files, {
-    modified: false,    // default
+    modified: true,
     untracked: false,   // default
     deleted: false,     // default
     added: false,       // default

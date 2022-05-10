@@ -1,6 +1,7 @@
 {
   "name": "@putout/git-status-porcelain",
   "version": "1.1.0",
+  "commitType": "colon",
   "description": "parse git status --porclain output with a pleasure",
   "main": "lib/porcelain.js",
   "scripts": {
