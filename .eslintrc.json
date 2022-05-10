@@ -1,7 +1,10 @@
 {
+    "rules": {
+        "array-bracket-spacing": "error"
+    },
     "extends": [
-        "plugin:putout/recommended",
-        "plugin:node/recommended"
+        "plugin:node/recommended",
+        "plugin:putout/recommended"
     ],
     "plugins": [
         "putout",

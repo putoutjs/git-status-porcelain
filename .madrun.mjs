@@ -1,16 +1,14 @@
-'use strict';
+import {run} from 'madrun';
 
-const {run} = require('madrun');
-
-module.exports = {
+export default {
     'test': () => 'tape test/*.js',
-    'coverage': () => 'nyc npm test',
-    'lint': () => 'putout lib test .madrun.js',
+    'coverage': () => 'c8 npm test',
+    'lint': () => 'putout .',
     'fix:lint': () => run('lint', '--fix'),
-    'report': () => 'nyc report --reporter=text-lcov | coveralls',
+    'report': () => 'c8 report --reporter=lcov',
     'watcher': () => 'nodemon -w test -w lib --exec',
     'watch:test': () => run('watcher', 'npm test'),
-    'watch:lint': () => run('watcher', '\'npm run lint\''),
+    'watch:lint': async () => await run('watcher', `'npm run lint'`),
     'watch:tape': () => 'nodemon -w test -w lib --exec tape',
     'watch:coverage:base': () => run('watcher', 'nyc npm test'),
     'watch:coverage:tape': () => run('watcher', 'nyc tape'),

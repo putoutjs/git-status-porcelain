@@ -13,7 +13,7 @@ const renamed = readFileSync(join(__dirname, 'fixture', 'renamed'), 'utf8');
 const {test, stub} = require('supertape');
 const porclain = require('..');
 
-test('porclain', (t) => {
+test('porclain: deleted, modified, untracked', (t) => {
     const result = porclain(deleted, {
         deleted: true,
         modified: true,

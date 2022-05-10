@@ -7,3 +7,5 @@ yarn-error.log
 .nyc_output
 *.swp
 
+.idea
+coverage
