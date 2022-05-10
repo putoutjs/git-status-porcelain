@@ -5,13 +5,12 @@ const {readFileSync} = require('fs');
 const child_process = require('child_process');
 
 const {reRequire} = require('mock-require');
-const stub = require('@cloudcmd/stub');
 
 const deleted = readFileSync(join(__dirname, 'fixture', 'deleted'), 'utf8');
 const untracked = readFileSync(join(__dirname, 'fixture', 'untracked'), 'utf8');
 const renamed = readFileSync(join(__dirname, 'fixture', 'renamed'), 'utf8');
 
-const test = require('supertape');
+const {test, stub} = require('supertape');
 const porclain = require('..');
 
 test('porclain', (t) => {
