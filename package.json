@@ -49,7 +49,7 @@
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "putout": "^26.0.1",
-    "supertape": "^1.2.3"
+    "supertape": "^7.2.3"
   },
   "engines": {
     "node": ">=8"
