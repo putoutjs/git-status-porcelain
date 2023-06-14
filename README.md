@@ -1,5 +1,14 @@
 # Porcelain [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage][CoverageIMGURL]][CoverageURL]
 
+[NPMURL]: https://npmjs.org/package/@putout/git-status-porcelain "npm"
+[NPMIMGURL]: https://img.shields.io/npm/v/@putout/git-status-porcelain.svg?style=flat&longCache=true
+[BuildStatusURL]: https://github.com/putoutjs/git-status-porcelain/actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/putoutjs/git-status-porcelain/workflows/Node%20CI/badge.svg
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat&longCache=true
+[CoverageURL]: https://coveralls.io/github/coderaiser/git-status-porcelain?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/git-status-porcelain/badge.svg?branch=master&service=github
+
 Parse `git status --porcelain` output with a pleasure.
 
 ## Install
@@ -10,7 +19,7 @@ npm i @putout/git-status-porcelain
 
 ## How to use?
 
-`porcalain` can be used in simpified mode, when you just need names of modified files (`added`, `deleted`, works as well):
+`porcelain` can be used in simpified mode, when you just need names of modified files (`added`, `deleted`, works as well):
 
 ```js
 const porcelain = require('@putout/git-status-porcelain');
@@ -62,12 +71,3 @@ getNames(modifiedFiles);
 ## License
 
 MIT
-
-[NPMIMGURL]: https://img.shields.io/npm/v/@putout/git-status-porcelain.svg?style=flat&longCache=true
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/git-status-porcelain/master.svg?style=flat&longCache=true
-[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat&longCache=true
-[NPMURL]: https://npmjs.org/package/@putout/git-status-porcelain "npm"
-[BuildStatusURL]: https://travis-ci.org/coderaiser/git-status-porcelain "Build Status"
-[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
-[CoverageURL]: https://coveralls.io/github/coderaiser/git-status-porcelain?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/git-status-porcelain/badge.svg?branch=master&service=github
