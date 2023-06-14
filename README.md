@@ -44,11 +44,12 @@ const files = parse(stdout);
 [{name: 'README.md', mode: ' M '}, {name: '1.js', mode: '?'}];
 
 const modifiedFiles = pick(files, {
-    modified: true,
-    untracked: false, // default
-    deleted: false, // default
-    added: false, // default
-    renamed: false, // default
+    modified: false,
+    untracked: false,
+    deleted: false,
+    added: default,
+    renamed: false,
+    unstaged: false,
 });
 // returns
 [{name: 'README.md', mode: ' M '}];

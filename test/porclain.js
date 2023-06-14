@@ -6,9 +6,12 @@ const child_process = require('child_process');
 
 const {reRequire} = require('mock-require');
 
-const deleted = readFileSync(join(__dirname, 'fixture', 'deleted'), 'utf8');
-const untracked = readFileSync(join(__dirname, 'fixture', 'untracked'), 'utf8');
-const renamed = readFileSync(join(__dirname, 'fixture', 'renamed'), 'utf8');
+const readFixture = (a) => readFileSync(join(__dirname, 'fixture', a), 'utf8');
+
+const deleted = readFixture('deleted');
+const untracked = readFixture('untracked');
+const renamed = readFixture('renamed');
+const modified = readFixture('modified');
 
 const {test, stub} = require('supertape');
 const porclain = require('..');
@@ -16,7 +19,7 @@ const porclain = require('..');
 test('porclain: deleted, modified, untracked', (t) => {
     const result = porclain(deleted, {
         deleted: true,
-        modified: true,
+        unstaged: true,
         untracked: true,
     });
     
@@ -26,9 +29,22 @@ test('porclain: deleted, modified, untracked', (t) => {
         'lib/parse-entries.js',
         'lib/parse-entry.js',
         'lib/parse-git-index.js',
-        'lib/parse-header.js',
         'package.json',
         'lib/parse.js',
+    ];
+    
+    t.deepEqual(result, expected);
+    t.end();
+});
+
+test('porclain: modified', (t) => {
+    const result = porclain(modified, {
+        modified: true,
+    });
+    
+    const expected = [
+        'lib/parse-header.js',
+        'package.json',
     ];
     
     t.deepEqual(result, expected);
@@ -40,7 +56,9 @@ test('porclain: added', (t) => {
         added: true,
     });
     
-    const expected = [];
+    const expected = [
+        'lib/parse-header.js',
+    ];
     
     t.deepEqual(result, expected);
     t.end();
@@ -70,7 +88,6 @@ test('porclain: deleted', (t) => {
         'lib/parse-entries.js',
         'lib/parse-entry.js',
         'lib/parse-git-index.js',
-        'lib/parse-header.js',
     ];
     
     t.deepEqual(result, expected);
