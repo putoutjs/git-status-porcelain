@@ -1,3 +1,12 @@
+2023.06.14, v3.0.0
+
+feature:
+- 151a21b package: supertape v8.3.0
+- 462e92a package: c8 v8.0.0
+- 77c38ee package: eslint-plugin-putout v17.7.0
+- 53523a8 package: putout v29.13.5
+- 2e210f4 pocelain: add unstaged
+
 2022.05.11, v2.0.1
 
 fix:
