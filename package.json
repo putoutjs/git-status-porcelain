@@ -38,7 +38,7 @@
     "c8": "^7.11.2",
     "eslint": "^8.15.0",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-putout": "^15.1.1",
+    "eslint-plugin-putout": "^17.7.0",
     "madrun": "^9.0.3",
     "mock-require": "^3.0.3",
     "nodemon": "^2.0.2",
