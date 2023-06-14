@@ -36,7 +36,7 @@ porcelain({
 ];
 ```
 
-But you can get break `porcelain` into pieces as well 😉:
+But you can break `porcelain` into pieces as well 😉:
 
 ```js
 const porcelain = require('@putout/git-status-porcelain');
