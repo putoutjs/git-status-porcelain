@@ -40,6 +40,7 @@ But you can get break `porcelain` into pieces as well 😉:
 
 ```js
 const porcelain = require('@putout/git-status-porcelain');
+
 const {
     run,
     parse,
@@ -49,12 +50,20 @@ const {
 
 // run git status --porcelain
 const stdout = run();
+
 // returns
 ' M README.md\n?? 1.js\n';
 
 const files = parse(stdout);
+
 // returns
-[{name: 'README.md', mode: ' M '}, {name: '1.js', mode: '?'}];
+[{
+    name: 'README.md',
+    mode: ' M ',
+}, {
+    name: '1.js',
+    mode: '?',
+}];
 
 const modifiedFiles = pick(files, {
     modified: false,
@@ -64,8 +73,12 @@ const modifiedFiles = pick(files, {
     renamed: false,
     unstaged: false,
 });
+
 // returns
-[{name: 'README.md', mode: ' M '}];
+[{
+    name: 'README.md',
+    mode: ' M ',
+}];
 
 getNames(modifiedFiles);
 // returns
