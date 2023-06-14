@@ -6,15 +6,13 @@ const child_process = require('child_process');
 
 const {reRequire} = require('mock-require');
 
-const readFixture = (a) => readFileSync(join(__dirname, 'fixture', a), 'utf8');
-
-const deleted = readFixture('deleted');
-const untracked = readFixture('untracked');
-const renamed = readFixture('renamed');
-const modified = readFixture('modified');
-
 const {test, stub} = require('supertape');
 const porclain = require('..');
+const readFixture = (a) => readFileSync(join(__dirname, 'fixture', a), 'utf8');
+const modified = readFixture('modified');
+const renamed = readFixture('renamed');
+const untracked = readFixture('untracked');
+const deleted = readFixture('deleted');
 
 test('porclain: deleted, modified, untracked', (t) => {
     const result = porclain(deleted, {
@@ -98,6 +96,7 @@ test('porclain: untracked', (t) => {
     const result = porclain(untracked, {
         untracked: true,
     });
+    
     const expected = [
         '.eslintrc.json',
         '.gitignore',
@@ -124,8 +123,7 @@ test('porclain: no str', (t) => {
     
     const result = porclain({});
     
-    const expected = [
-    ];
+    const expected = [];
     
     child_process.spawnSync = spawnSync;
     
@@ -143,8 +141,7 @@ test('porclain: no filter', (t) => {
     
     const result = porclain();
     
-    const expected = [
-    ];
+    const expected = [];
     
     child_process.spawnSync = spawnSync;
     

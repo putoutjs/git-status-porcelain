@@ -14,4 +14,3 @@ export default {
     'watch:coverage:tape': () => run('watcher', 'nyc tape'),
     'watch:coverage': () => run('watch:coverage:base'),
 };
-

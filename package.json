@@ -2,7 +2,6 @@
   "name": "@putout/git-status-porcelain",
   "version": "2.0.1",
   "type": "commonjs",
-  "commitType": "colon",
   "description": "parse git status --porclain output with a pleasure",
   "main": "lib/porcelain.js",
   "scripts": {
@@ -37,7 +36,7 @@
   "devDependencies": {
     "c8": "^8.0.0",
     "eslint": "^8.15.0",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-putout": "^17.7.0",
     "madrun": "^9.0.3",
     "mock-require": "^3.0.3",

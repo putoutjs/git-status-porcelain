@@ -28,8 +28,12 @@ porcelain({
     modified: true,
     untracked: true,
 });
+
 // returns
-['README.md', '1.js'];
+[
+    'README.md',
+    '1.js',
+];
 ```
 
 But you can get break `porcelain` into pieces as well 😉:
@@ -56,7 +60,7 @@ const modifiedFiles = pick(files, {
     modified: false,
     untracked: false,
     deleted: false,
-    added: default,
+    added: false,
     renamed: false,
     unstaged: false,
 });
