@@ -66,7 +66,7 @@ const files = parse(stdout);
 }];
 
 const modifiedFiles = pick(files, {
-    modified: false,
+    modified: true,
     untracked: false,
     deleted: false,
     added: false,
