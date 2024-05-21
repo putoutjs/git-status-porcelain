@@ -48,7 +48,7 @@ const {
     getNames,
 } = porcelain;
 
-// run git status --porcelain
+// run 'git status --porcelain'
 const stdout = run();
 
 // returns
